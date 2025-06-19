@@ -1,0 +1,133 @@
+/* Variables */
+:root {
+    --orange: #FF6B00;
+    --orange-dark: #E65C00;
+    --white: #FFFFFF;
+    --black: #333333;
+    --gray: #F5F5F5;
+}
+
+.orange-logo {
+    width: 100px;
+    height: auto;
+    margin-bottom: 1rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Reset et base */
+
+/* Reset et base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--white);
+    color: var(--black);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h1 {
+    color: var(--orange);
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+/* Formulaire */
+.form-section {
+    background-color: var(--gray);
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.orange-button {
+    background-color: var(--orange);
+    color: var(--white);
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.orange-button:hover {
+    background-color: var(--orange-dark);
+}
+
+.orange-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Liste des employés */
+.list-section {
+    background-color: var(--gray);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.employee-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.employee-item:last-child {
+    border-bottom: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    
+    .form-section, .list-section {
+        padding: 1rem;
+    }
+    
+    .employee-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+}
